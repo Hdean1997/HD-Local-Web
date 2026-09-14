@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>HD Local Web | Simple Websites for Local Businesses</title>
-  <meta name="description" content="Affordable, mobile-friendly websites for local businesses in Tamworth and surrounding areas. Simple one-page sites from £249.">
+  <title>HD Local Web | Professional Websites for Local Businesses</title>
+  <meta name="description" content="Professional, mobile-friendly websites for local businesses and trades. Starter websites from £249.">
 
   <style>
     :root{
@@ -319,7 +319,7 @@
 
     .steps{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(4,1fr);
       gap:16px;
     }
 
@@ -475,6 +475,52 @@
       color:#56615b;
     }
 
+
+    .faq{
+      background:#0d1411;
+    }
+
+    .faq-list{
+      max-width:860px;
+    }
+
+    .faq details{
+      border-top:1px solid var(--line);
+      padding:18px 0;
+    }
+
+    .faq details:last-child{
+      border-bottom:1px solid var(--line);
+    }
+
+    .faq summary{
+      cursor:pointer;
+      list-style:none;
+      position:relative;
+      padding-right:34px;
+      font-weight:850;
+    }
+
+    .faq summary::-webkit-details-marker{display:none}
+
+    .faq summary::after{
+      content:"+";
+      position:absolute;
+      right:0;
+      top:-4px;
+      color:var(--accent-soft);
+      font-size:24px;
+    }
+
+    .faq details[open] summary::after{content:"−"}
+
+    .faq details p{
+      margin-top:10px;
+      color:var(--muted);
+      max-width:760px;
+      font-size:14px;
+    }
+
     @media(max-width:760px){
       .hero{
         min-height:640px;
@@ -522,6 +568,26 @@
         text-align:left;
       }
     }
+
+    @media(max-width:520px){
+      .hero-buttons{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+      }
+
+      .hero-buttons .btn{
+        min-width:0;
+        padding:0 12px;
+        font-size:14px;
+        white-space:nowrap;
+      }
+
+      .mini-trust{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px 16px;
+      }
+    }
   </style>
 </head>
 
@@ -539,25 +605,25 @@
   <section class="hero">
     <div class="container hero-content">
 
-      <span class="eyebrow">Websites for local businesses</span>
+      <span class="eyebrow">Professional websites for local businesses</span>
 
       <h1>
         A professional website without the agency price.
       </h1>
 
       <p>
-        Simple, mobile-friendly websites for local trades and small businesses. Built to make you look professional, explain what you do and make it easy for customers to get in touch.
+        Professional, mobile-friendly websites for local trades and small businesses. Clear, modern and built to help customers understand what you do and get in touch.
       </p>
 
       <div class="hero-buttons">
-        <a href="#portfolio" class="btn btn-primary">See Example Sites</a>
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Get a Quote</a>
       </div>
 
       <div class="mini-trust">
         <span><strong>From £249</strong> one-off</span>
         <span><strong>Mobile-first</strong> design</span>
-        <span><strong>Simple</strong> setup</span>
+        <span><strong>Local-business</strong> focused</span>
       </div>
 
     </div>
@@ -588,11 +654,12 @@
         <div class="price-note">One-off website build price</div>
 
         <div class="offer-list">
-          <div>✓ Professional one-page website</div>
+          <div>✓ Professional one-page starter website</div>
           <div>✓ Mobile-friendly design</div>
           <div>✓ Your services and service areas</div>
           <div>✓ Contact / enquiry buttons</div>
           <div>✓ Your photos, branding and business details</div>
+          <div>✓ Up to 2 rounds of reasonable changes</div>
           <div>✓ Help getting the website live</div>
         </div>
       </div>
@@ -612,7 +679,7 @@
         </h2>
 
         <p>
-          These concept sites show the type of website HD Local Web can create for local businesses.
+          These are fictional concept businesses created to demonstrate the type of websites HD Local Web can build.
         </p>
       </div>
 
@@ -688,34 +755,26 @@
 
         <div class="step">
           <div class="step-number">1</div>
-
-          <h3>Send your details</h3>
-
-          <p>
-            Your business name, services, contact details, service areas, branding and any photos you want to use.
-          </p>
+          <h3>Tell me about your business</h3>
+          <p>Your services, service areas, contact details, branding and any photos you want to use.</p>
         </div>
-
 
         <div class="step">
           <div class="step-number">2</div>
-
           <h3>Your site is built</h3>
-
-          <p>
-            Your website is designed around your business and made to look good on phones as well as larger screens.
-          </p>
+          <p>Your website is designed around your business and made to look good on phones as well as larger screens.</p>
         </div>
-
 
         <div class="step">
           <div class="step-number">3</div>
+          <h3>You review it</h3>
+          <p>The starter package includes up to two rounds of reasonable changes after you see the first version.</p>
+        </div>
 
-          <h3>Review & go live</h3>
-
-          <p>
-            You review the site, request reasonable changes, and once you're happy we get it online.
-          </p>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>We launch it</h3>
+          <p>Once you're happy, I help get the website online and connected to your domain.</p>
         </div>
 
       </div>
@@ -736,7 +795,7 @@
           </h2>
 
           <p>
-            Especially useful if you currently rely on Facebook or Instagram, have no website, or have an old website that no longer represents the quality of your work.
+            Ideal if you currently rely on Facebook or Instagram, have no website, or have an older site that no longer represents the quality of your work.
           </p>
         </div>
       </div>
@@ -762,6 +821,44 @@
   </section>
 
 
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Common questions</span>
+        <h2>Before we get started.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>What do I need to provide?</summary>
+          <p>Your business name, services, service areas, contact details, any existing logo or colours, and any photos you'd like to use. If you do not have everything ready, we can work out what is actually needed before the build starts.</p>
+        </details>
+
+        <details>
+          <summary>Does the £249 include a domain name?</summary>
+          <p>The £249 starter price covers the website build. Domain names and any third-party services are separate, so you keep control of your own accounts and ongoing costs.</p>
+        </details>
+
+        <details>
+          <summary>Will the website work properly on phones?</summary>
+          <p>Yes. Every HD Local Web website is designed with mobile users in mind.</p>
+        </details>
+
+        <details>
+          <summary>Can I ask for changes?</summary>
+          <p>Yes. The starter package includes up to two rounds of reasonable changes after the first version is shown to you.</p>
+        </details>
+
+        <details>
+          <summary>Can you build something bigger than one page?</summary>
+          <p>Yes. £249 is the starter package. Larger or more complex websites can be quoted separately depending on what your business needs.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
   <section class="contact" id="contact">
     <div class="container contact-grid">
 
@@ -769,11 +866,11 @@
         <span class="eyebrow" style="color:#0e1713;">HD Local Web</span>
 
         <h2>
-          Need a simple website for your business?
+          Ready to give your business a proper online presence?
         </h2>
 
         <p>
-          Tell me what your business does and what you need. I'll let you know whether the £249 starter website is a good fit.
+          Tell me what your business does and what you need. I'll let you know whether the £249 starter website is a good fit and what the next step would be.
         </p>
       </div>
 
@@ -802,11 +899,11 @@
 
       <div>
         <div class="brand">HD <span>Local Web</span></div>
-        <p>Simple websites. Built for local business.</p>
+        <p>Professional websites for local businesses.</p>
       </div>
 
       <div class="footer-right">
-        <p>Tamworth & surrounding areas</p>
+        <p>Local-business website design</p>
         <p>Websites from £249</p>
       </div>
 
